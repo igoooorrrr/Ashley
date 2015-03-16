@@ -2,6 +2,8 @@ import random
 import sys
 import os
 
+# Goal 1:
+
 num_bread = random.randint(1,100)
 num_pb = random.randint(1,50)
 num_jelly = random.randint(1,50)
@@ -11,6 +13,9 @@ print(num_bread, " ", num_pb, " ", num_jelly)
 if ((num_bread >= 2) and (num_pb >= 1) and (num_jelly >= 1)):
     print("You can make a sandwich")
 else : print("You CAN'T make a sandwich")
+
+
+# Goal 2:
 
 ingredients = [(num_bread // 2), num_pb, num_jelly]
 
@@ -22,3 +27,22 @@ if ingredients[0] != 0 :
     print("You can make ", ingredients[0], " sandwiches!")
 else : print("You can't make ANY sandwiches!")
 
+# Goal 3
+
+if num_bread % 2 == 1 :
+    print("You can make ", ingredients[0], " regular sandwiches and one open-faced sandwich.")
+else : print("You can make ", ingredients[0], " sandwiches!")
+
+# Goal 4
+
+if num_bread == 0 :
+    print("You need more bread!")
+elif num_pb == 0 :
+    print("You need more peanut butter!");
+elif num_jelly == 0 :
+    print("You need more jelly!")
+
+
+# Goal 5
+if (num_bread >= 1) and (num_pb >= 1) and (num_jelly == 0) :
+    print("You can make a gross peanut butter and not jelly sandwich")
