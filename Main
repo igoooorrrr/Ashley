@@ -17,6 +17,16 @@ else : print("You CAN'T make a sandwich")
 
 # Goal 2:
 
+if ((num_bread // 2) <= num_jelly) and ((num_bread // 2) <= num_pb) :
+    print("You can make ", num_bread // 2, " sandwiches")
+elif (num_pb <= (num_bread // 2)) and (num_pb <= num_jelly) :
+    print("You can make ", num_pb, " sandwiches")
+elif (num_jelly <= (num_bread // 2)) and (num_jelly <= num_pb) :
+    print("You can make ", num_jelly, " sandwiches")
+
+
+
+'''
 ingredients = [(num_bread // 2), num_pb, num_jelly]
 
 ingredients.sort()
@@ -26,7 +36,7 @@ print(ingredients)
 if ingredients[0] != 0 :
     print("You can make ", ingredients[0], " sandwiches!")
 else : print("You can't make ANY sandwiches!")
-
+x
 # Goal 3
 
 if num_bread % 2 == 1 :
@@ -46,3 +56,4 @@ elif num_jelly == 0 :
 # Goal 5
 if (num_bread >= 1) and (num_pb >= 1) and (num_jelly == 0) :
     print("You can make a gross peanut butter and not jelly sandwich")
+'''
